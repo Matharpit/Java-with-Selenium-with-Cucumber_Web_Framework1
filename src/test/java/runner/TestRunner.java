@@ -10,6 +10,7 @@ import utility.BrowserDriver;
 @CucumberOptions(
         features = "src/test/java/features",
         glue = {"utility", "stepdefinition"},
+        tags = "@samplelogin",
         //plugin = {"pretty", "html:target/cucumber-report.html", "json:cucumber.json"}
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
